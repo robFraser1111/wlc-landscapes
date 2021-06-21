@@ -14,3 +14,76 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 40px;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-rows: 600px auto 200px;
+  grid-template-columns: 100%;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  background: green;
+}
+
+header section {
+  text-align: center;
+  color: #fff;
+}
+
+header section button {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 60px;
+  padding: 0px 40px;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav img {
+  justify-self: start;
+}
+
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+
+main {
+  max-width: 1200px;
+  justify-self: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 40px;
+}
+
+ul {
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  background-color: green;
+  padding: 30px;
+}
+
+.footer-contact > * {
+  display: inline-block;
+}

@@ -1,36 +1,25 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import styles from "../styles/Home.module.css";
+import Hero from "../public/hero-01.jpg";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={"container"}>
       <Head>
         <title>WLC Landscapes</title>
         <meta name="description" content="Melbourne Landscaping" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          WLC Landscapes
-        </h1>
+      <Header bg={ Hero } />
 
-        <p className={styles.description}>
-          Website coming soon
-        </p>
-
+      <main>
+        <section>Main Content</section>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://roo.digital"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by RooDigital
-        </a>
-      </footer>
+      <Footer />
     </div>
-  )
+  );
 }
