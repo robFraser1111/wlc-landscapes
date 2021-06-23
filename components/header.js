@@ -8,13 +8,20 @@ export default function Header(props) {
             <Menu />
 
             <section>
+
                 <h1>
-                Landscapers servicing the Eastern and Bayside suburbs of Melbourne
+                    { props.title }
                 </h1>
 
-                <button>
-                <h2>Get your free quote</h2>
-                </button>
+                { props.ctaText
+                ?   <a href={ props.ctaLink }>
+                        <button>
+                            <h3>{ props.ctaText }</h3>
+                        </button>
+                    </a>
+                :   null
+                }
+
             </section>
             
         </header>

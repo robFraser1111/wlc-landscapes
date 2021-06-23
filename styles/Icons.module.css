@@ -1,0 +1,21 @@
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.icons .icon {
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: inherit;
+  height: auto;
+}
+
+.text {
+  padding: 10px;
+}
