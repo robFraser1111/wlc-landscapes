@@ -18,12 +18,36 @@ a {
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 8px 0;
+}
+
 h1 {
   font-size: 40px;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
 }
 
 
@@ -61,18 +85,7 @@ button {
   cursor: pointer;
 }
 
-nav img {
-  justify-self: start;
-}
 
-nav {
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 30px;
-}
 
 main {
   max-width: 2560px;
@@ -85,15 +98,6 @@ main {
 }
 
 
-
-nav ul li {
-  display: inline-block;
-  padding: 40px;
-}
-
-ul {
-  padding: 0;
-}
 
 
 

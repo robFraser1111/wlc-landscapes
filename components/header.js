@@ -16,7 +16,7 @@ export default function Header(props) {
                 { props.ctaText
                 ?   <a href={ props.ctaLink }>
                         <button>
-                            <h3>{ props.ctaText }</h3>
+                            <p>{ props.ctaText }</p>
                         </button>
                     </a>
                 :   null

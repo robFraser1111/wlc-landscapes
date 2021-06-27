@@ -1,0 +1,15 @@
+.service {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 30px;
+}
+
+.overivew {
+  max-width: 800px;
+}
+
+.includes {
+  max-width: 400px;
+}

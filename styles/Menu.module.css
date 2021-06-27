@@ -1,0 +1,62 @@
+.navigation .logo {
+  justify-self: start;
+}
+
+.navigation {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.navigation ul .navItem {
+  display: inline-block;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.navigation ul {
+  padding: 0;
+}
+
+
+@media screen and (min-width: 720px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  .navigation ul {
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    background: black;
+  }
+
+  .email, .phone {
+    display: none!important;
+  }
+
+  .navigation ul .navItem {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+  .navigation ul .navItem {
+    font-size: 20px;
+    padding: 20px;
+  }
+}

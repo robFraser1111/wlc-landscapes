@@ -1,27 +1,30 @@
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
+
 import styles from "../styles/Cards.module.css";
+import Arrow from "../public/long-arrow-alt-right-solid.svg";
 
 export default function Cards(props) {
-    return (
+  return (
+    <section className={styles.cards}>
+      {props.services.map((service) => (
+        <div className={styles.card} key={service.title}>
+          <Link href={service.link}>
+            <a>
+              <Image src={service.image} />
+              <div className={styles.text}>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
 
-        <section className={styles.cards}>
-            {props.services.map((service) => (
-                <div className={styles.card} key={ service.title }>
-                    <img src={ service.image.src }  />
-                    <div className={styles.text}>
-                        <h5>{ service.title }</h5>
-                        <p>{ service.description }</p>
-                        <Link href={ service.link }>
-                            <a>{ service.cta }</a>
-                        </Link>
-                    </div>
+                <div className={styles.cta}>
+                  <h6>{service.cta}</h6>
+                  <Image src={Arrow} alt="Arrow" width={50} height={30} />
                 </div>
-            ))}
-        </section>
-
-    )
+              </div>
+            </a>
+          </Link>
+        </div>
+      ))}
+    </section>
+  );
 }
-
-
-
-

@@ -4,6 +4,7 @@ export default function ContactForm() {
     return (
 
         <section className={ styles.section }>
+
             <form className={ styles.form }>
 
                 <input type="text" id="name" name="name" placeholder="Name" required />
@@ -28,7 +29,7 @@ export default function ContactForm() {
 
                 </textarea>
 
-                <button type="button" onclick="alert('Hello World!')">Submit</button> 
+                <button type="button" onClick="alert('Hello World!')">Submit</button> 
 
             </form>
         </section>

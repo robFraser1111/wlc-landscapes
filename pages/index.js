@@ -26,7 +26,7 @@ export default function Home() {
         title: 'Decking',
         description: 'A wide range of timber and composite decking services available.',
         cta: 'Find out more',
-        link: ''
+        link: '/decking'
       },
       {
         image: ServicePaving,
@@ -86,23 +86,23 @@ export default function Home() {
       <div id="fb-root"></div>
       <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v11.0" nonce="dCURxFbR"></script>
 
-        <h2 className={"sub-heading"}>Services</h2>
+        <h2 id={"services"} className={"sub-heading"}>Services</h2>
 
         <Cards services={ services } />
 
-        <h2 className={"sub-heading"}>Why us?</h2>
+        <h2 id={"why"} className={"sub-heading"}>Why us?</h2>
 
         <WhyUs />
 
-        <h2 className={"sub-heading"}>Recent work</h2>
+        <h2 id={"recent"} className={"sub-heading"}>Recent work</h2>
 
         <FacebookFeed />
 
-        <h2 className={"sub-heading"}>About us</h2>
+        <h2 id={"about"} className={"sub-heading"}>About us</h2>
 
         <ImageText rows={ aboutUs }/>
 
-        <h2 className={"sub-heading"}>Testimonials</h2>
+        <h2 id={"testimonials"} className={"sub-heading"}>Testimonials</h2>
 
         <Testimonials />
 

@@ -1,40 +1,59 @@
+import { useState, useEffect } from "react";
+
 import styles from "../styles/Testimonials.module.css";
 
 export default function Testimonials() {
+  // Array of Testimonial objects
+  const testimonials = [
+    {
+      testimonial: `Excellent workmanship. Highly recommend Steve! Won't be disapointed.`,
+      name: "Bek Nesta",
+    },
+    {
+      testimonial:
+        "Would highly recommend WLC Landscapes. Professional team. Beautiful work and craftsmanship. They work well with the client to ensure an amazing outcome that the client is happy with. Nothing is too much trouble. I’m thrilled with their work.",
+      name: "Amanda Ferreira",
+    },
+    {
+      testimonial:
+        "Steve and Stu have just completed a complete renovation of our backyard and the result is spectacular. Their professionalism and attention to detail has been outstanding throughout the work.",
+      name: "Erik Schanssema",
+    },
+  ];
 
-    const testimonials = [
-        {
-            testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel enim quis ligula congue elementum eu eu nulla.',
-            name: 'John Doe'
-        },
-        {
-            testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel enim quis ligula congue elementum eu eu nulla.',
-            name: 'Some guy'
-        },
-        {
-            testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel enim quis ligula congue elementum eu eu nulla.',
-            name: 'Some girl'
-        }
-    ]
+  // REACT State Hook used to dynamically update the Testimonial that's displayed
+  let [currentTestimonial, setTestimonial] = useState(testimonials[0]);
 
-    return (
+  // Function that gets called on load then loops through Testimonials Array and updates State
+  function Carousel(items) {
+    let counter = 0;
+    const length = items.length;
 
-        <section className={styles.testimonials}>
-            {testimonials.map((testimonial) => (
-                <div className={styles.testimonial} key={ testimonial.name }>
-                    <blockquote>
-                        <h5>{ testimonial.testimonial }</h5>
-                    </blockquote>
-                    <p>
-                        <small>{ testimonial.name }</small>
-                    </p>
-                </div>
-            ))}
-        </section>
+    setInterval(function () {
+      if (counter == length - 1) {
+        counter = 0;
+      } else {
+        counter++;
+      }
 
-    )
+      setTestimonial(testimonials[counter]);
+
+      console.log("Counter " + counter);
+    }, 10000);
+  }
+
+  useEffect(() => {
+    Carousel(testimonials);
+  }, []); // <-- empty dependency array so function only runs once on load
+
+  return (
+    <section className={styles.testimonials}>
+      <blockquote>
+        <h5>{currentTestimonial.testimonial}</h5>
+      </blockquote>
+      <p>
+        <small>{currentTestimonial.name}</small>
+      </p>
+    </section>
+  );
 }
-
-
-
-
