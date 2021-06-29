@@ -29,7 +29,7 @@ export default function ContactForm() {
 
                 </textarea>
 
-                <button type="button" onClick="alert('Hello World!')">Submit</button> 
+                <button type="button">Submit</button> 
 
             </form>
         </section>
