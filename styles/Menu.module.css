@@ -22,11 +22,74 @@
   padding: 0;
 }
 
+.mobile {
+  width: 60px;
+}
+
 
 @media screen and (min-width: 720px) {
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
   .mobile {
     display: none;
   }
+
+  /* Menu Hover Effects */
+  .underline {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .underline::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #ffffff;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .underline:hover::before, 
+  .underline:focus::before, 
+  .underline:active::before {
+    left: 0;
+    right: 0;
+  }
+
+  .hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hover:hover, 
+  .hover:focus, 
+  .hover:active {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
 }
 
 @media screen and (max-width: 720px) {
@@ -34,13 +97,26 @@
     width: 80px;
     height: auto;
   }
+
+  .navigation button {
+    background: none;
+    border: none;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .show {
+    opacity: 1;
+  }
   
   .navigation ul {
-    display: none;
     position: absolute;
     top: 120px;
     right: 0;
-    background: black;
+    background: rgb(0,0,0,0.85);
+    transition: 0.2s;
   }
 
   .email, .phone {
@@ -52,6 +128,16 @@
     padding: 20px;
     font-size: 18px;
   }
+
+  .mobile svg path {
+    fill: #ffffff;
+    transition: 0.2s;
+  }
+
+  .mobile:hover svg path, .mobile:focus svg path, .mobile:active svg path {
+    fill: var(--green);
+  }
+
 }
 
 @media screen and (min-width: 720px) and (max-width: 1200px) {

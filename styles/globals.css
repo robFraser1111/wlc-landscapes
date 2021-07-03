@@ -1,3 +1,7 @@
+:root {
+  --green: green;
+}
+
 html,
 body {
   padding: 0;
@@ -54,7 +58,7 @@ p {
 
 .container {
   display: grid;
-  grid-template-rows: 600px auto 240px;
+  grid-template-rows: auto auto 240px;
   grid-template-columns: 100%;
   justify-content: center;
   height: 100vh;
@@ -71,6 +75,7 @@ header {
 header section {
   text-align: center;
   color: #fff;
+  margin: 60px auto 120px auto;
 }
 
 header section button {

@@ -17,7 +17,6 @@ import ServiceLandscaping from "../public/service-landscaping-01.jpg";
 import Map from "../public/noble-park-01.jpg";
 import Car from "../public/wlc-01.jpg";
 
-
 export default function Home() {
 
     const services = [
@@ -33,21 +32,21 @@ export default function Home() {
         title: 'Paving',
         description: 'We cater for all of your paving and concreteing needs.',
         cta: 'Find out more',
-        link: ''
+        link: '/paving'
       },
       {
         image: ServiceFencing,
         title: 'Pool fencing',
         description: 'Specialists in installation of frameless and semi-frameless glass pool fencing.',
         cta: 'Find out more',
-        link: ''
+        link: '/pool-fencing'
       },
       {
         image: ServiceLandscaping,
         title: 'Landscaping',
         description: 'Experienced landscapers with a proud history of delivering construction and design landscaping projects',
         cta: 'Find out more',
-        link: ''
+        link: '/landscaping'
       }
     ]
 

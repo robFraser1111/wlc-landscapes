@@ -12,7 +12,7 @@ import ServiceLandscaping from "../public/service-landscaping-01.jpg";
 import ServicePaving from "../public/service-paving-01.jpg";
 import ServicePoolFencing from "../public/service-pool-fencing-01.jpg";
 
-export default function Decking() {
+export default function Paving() {
 
     const images = [ServiceDecking, ServiceLandscaping, ServicePaving, ServicePoolFencing];
     
@@ -22,16 +22,24 @@ export default function Decking() {
 
             <Head>
                 <title>WLC Landscapes</title>
-                <meta name="description" content="Melbourne Landscaping" />
+                <meta name="description" content="Melbourne Paving" />
             </Head>
 
-            <Header bg={ Hero } title={"Decking"} />
+            <Header bg={ Hero } title={"Paving"} />
 
             <main>
 
                 <ServiceOverview 
-                    serviceOverview={`We design and construct quality composite decking, timber decking and pergolas. We can help you decide on the best decking material and design for your space. \n We are experienced in building or installing a wide range of different types of decks that will perfectly fir your property and tastes. We will design your deck taking into consideration your land, budget and lifestyle requirements, and we dedicate ourselves to providing top quality craftmanship.`} 
-                    serviceIncludes={["Pool decking", "Composite decking", "Timber decking", "Pergola building", "Feature fencing and screening"]}
+                    serviceOverview={`We offer the best service and the highest quality materials and workmanship to achieve the landscape you desire. \n Whether it be for poolside paving, entertainment areas, driveways, or gardens big or small. We can work wonders with any material, whether it's concrete, bluestone, granite, sandstone, slate, limestone or bricks we create versatile styles from contemporary, natural, or something completely unique to you!`} 
+                    serviceIncludes={
+                        [
+                            "Pool areas", 
+                            "Patios", 
+                            "Driveways", 
+                            "Paths", 
+                            "Garden edges"
+                        ]
+                    }
                 />
 
                 <Gallery images={images}/>

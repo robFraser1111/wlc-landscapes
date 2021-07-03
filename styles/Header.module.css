@@ -1,0 +1,21 @@
+.header h1 {
+  padding: 0 20px;  
+}
+
+.cta {
+  margin-top: 60px;
+}
+
+.cta p {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.header button {
+  transition: 0.2s;
+}
+
+.header button:hover, .header button:focus {
+  background: white;
+  color: black;
+}

@@ -14,3 +14,12 @@
 .thumbnail {
   padding: 1px;
 }
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.main img {
+  width: inherit;
+}

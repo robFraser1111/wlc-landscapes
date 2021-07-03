@@ -1,4 +1,5 @@
 import Menu from "../components/menu";
+import styles from "../styles/Header.module.css";
 
 export default function Header(props) {
     return (
@@ -7,18 +8,20 @@ export default function Header(props) {
 
             <Menu />
 
-            <section>
+            <section className={styles.header}>
 
                 <h1>
                     { props.title }
                 </h1>
 
                 { props.ctaText
-                ?   <a href={ props.ctaLink }>
-                        <button>
-                            <p>{ props.ctaText }</p>
-                        </button>
-                    </a>
+                ?   <div className={styles.cta}>
+                      <a href={ props.ctaLink }>
+                            <button>
+                                <p>{ props.ctaText }</p>
+                            </button>
+                        </a>
+                   </div>
                 :   null
                 }
 
