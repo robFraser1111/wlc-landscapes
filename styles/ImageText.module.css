@@ -2,19 +2,36 @@
   max-width: 1200px;
 }
 
-.items:nth-child(2) {
-  margin: 20px;
-  flex-direction: row-reverse;
-}
-
 .items {
   display: flex;
 }
 
-.items > * {
+.items > div {
   width: 50%;
 }
 
 .text {
   padding: 20px;
+}
+
+.text p {
+  white-space: pre-wrap;
+}
+
+@media screen and (max-width: 720px) {
+ .items {
+   flex-direction: column;
+ }
+ .items > div {
+   width: 100%;
+ }
+ .items:nth-child(2) {
+   margin: 60px 0;
+ }
+}
+
+@media screen and (min-width: 720px) {
+  .items:nth-child(2) {
+    flex-direction: row-reverse;
+  }
 }

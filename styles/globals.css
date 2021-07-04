@@ -123,3 +123,14 @@ footer {
 .footer-contact > * {
   display: inline-block;
 }
+
+
+
+
+
+
+
+
+.fade h5, .fade p  {
+  opacity: 0!important;
+}

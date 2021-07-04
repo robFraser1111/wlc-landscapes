@@ -28,6 +28,7 @@ export default function Testimonials() {
   function Carousel(items) {
     let counter = 0;
     const length = items.length;
+    let classes = document.getElementById("classes");
 
     setInterval(function () {
       if (counter == length - 1) {
@@ -36,10 +37,17 @@ export default function Testimonials() {
         counter++;
       }
 
+      console.log("Start Fade");
+      setTimeout(() => { classes.classList.add("fade"); }, 8000);
+
+      console.log("Change Testimonial");
       setTestimonial(testimonials[counter]);
 
+      console.log("End Fade");
+      setTimeout(() => { classes.classList.remove("fade"); }, 200);
+
       console.log("Counter " + counter);
-    }, 10000);
+    }, 8200);
   }
 
   useEffect(() => {
@@ -47,7 +55,7 @@ export default function Testimonials() {
   }, []); // <-- empty dependency array so function only runs once on load
 
   return (
-    <section className={styles.testimonials}>
+    <section id="classes" className={styles.testimonials}>
       <blockquote>
         <h5>{currentTestimonial.testimonial}</h5>
       </blockquote>

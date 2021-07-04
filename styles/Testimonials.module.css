@@ -1,8 +1,12 @@
 .testimonials {
   text-align: center;
-  opacity: 1;
-  transition: all 0.2 ease-in-out;
   max-width: 1200px;
   padding: 0 30px;
   min-height: 120px;
 }
+
+.testimonials h5, .testimonials p {
+  opacity: 1;
+  transition: 0.2s;
+}
+

@@ -54,9 +54,7 @@ export default function Home() {
     const aboutUs = [
       {
         heading: 'Get quotes your way',
-        description: `Whitaker Landscape Constructions understands that calling a tradesperson is often the last thing you want to do. That's why we make it so you don't have to. Contact us via email, facebook messenger, Instagram DMs or text. We write back quickly.
-        <br />
-        We are also more than happy to do things the old fashioned way and talk on the phone should you so wish.`,
+        description: `Whitaker Landscape Constructions understands that calling a tradesperson is often the last thing you want to do. That's why we make it so you don't have to. Contact us via email, facebook messenger, Instagram DMs or text. We write back quickly.\n\nWe are also more than happy to do things the old fashioned way and talk on the phone should you so wish.`,
         image: Quotes
       },
       {
