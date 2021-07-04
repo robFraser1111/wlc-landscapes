@@ -13,12 +13,12 @@ export default function Gallery(props) {
         <section className={styles.gallery}>
 
             <div className={styles.main}>
-                <img src={main.src} alt={main.src} />
+                <Image src={main} alt={main.src} />
             </div>
 
             <div className={styles.thumbnails}>
                 {props.images.map((image) => (
-                    <div className={styles.thumbnail} onClick={() => setImage(image)}>
+                    <div className={styles.thumbnail} key={props.images[image]} onClick={() => setImage(image)}>
                         <Image src={image} alt={image.src}/>
                     </div>
                 ))}

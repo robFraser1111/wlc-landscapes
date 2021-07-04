@@ -8,10 +8,10 @@ export default function Footer() {
         <footer>
 
                 <div className={"footer-social"}>
-                    <a href="https://www.facebook.com/wlclandscapes/" target="_blank" rel="noopener">
+                    <a href="https://www.facebook.com/wlclandscapes/" target="_blank" rel="noreferrer">
                         <Image src={facebook} alt="Facebook" width={40} height={40} />
                     </a>
-                    <a href="https://www.instagram.com/wlclandscapes/" target="_blank" rel="noopener">
+                    <a href="https://www.instagram.com/wlclandscapes/" target="_blank" rel="noreferrer">
                         <Image src={instagram} alt="Instagram" width={40} height={40} />
                     </a>
                 </div>
@@ -29,7 +29,7 @@ export default function Footer() {
     
                 <p>ABN 87 405 282 344</p>
                   
-                    <p><a href="https://roo.digital" target="_blank">  Powered by RooDigital</a></p>
+                    <p><a href="https://roo.digital" target="_blank" rel="noreferrer">  Powered by RooDigital</a></p>
                 
 
         </footer>

@@ -10,7 +10,7 @@ export default function Cards(props) {
         <div className={styles.card} key={service.title}>
           <Link href={service.link}>
             <a>
-              <Image src={service.image} />
+              <Image src={service.image} alt={service.image.src}/>
               <div className={styles.text}>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>

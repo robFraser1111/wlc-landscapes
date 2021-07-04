@@ -12,7 +12,7 @@ export default function ServiceOverview(props) {
         <h2>Service includes</h2>
         <ul>
           {props.serviceIncludes.map((serviceInclude) => (
-            <li>{serviceInclude}</li>
+            <li key={props.serviceIncludes[serviceInclude]}>{serviceInclude}</li>
           ))}
         </ul>
       </div>
