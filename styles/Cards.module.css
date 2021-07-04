@@ -7,9 +7,18 @@
 }
 
 .cards .card {
-  border: 1px solid black;
+  border: 2px solid var(--black);
   margin: 20px;
   width: 300px;
+  transition: 0.2s;
+}
+
+.card:hover, .card:focus, .card:active {
+  border-color: var(--green);
+}
+
+.card:hover .arrow, .card:focus .arrow, .card:active .arrow {
+  padding-left: 10px;
 }
 
 .card img {
@@ -22,7 +31,15 @@
 }
 
 .cta {
+  color: var(--green);
   margin-top: 30px;
   display: inline-flex;
   align-items: center;
+}
+
+.arrow {
+  width: 50px;
+  height: 30px;
+  padding-left: 0;
+  transition: 0.2s;
 }

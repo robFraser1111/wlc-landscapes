@@ -16,6 +16,6 @@
 }
 
 .header button:hover, .header button:focus {
-  background: white;
-  color: black;
+  background: var(--white);
+  color: var(--black);
 }

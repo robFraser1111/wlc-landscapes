@@ -14,6 +14,7 @@ import ServiceDecking from "../public/service-decking-01.jpg";
 import ServicePaving from "../public/service-paving-01.jpg";
 import ServiceFencing from "../public/service-pool-fencing-01.jpg";
 import ServiceLandscaping from "../public/service-landscaping-01.jpg";
+import Quotes from "../public/quotes-your-way-01.png";
 import Map from "../public/noble-park-01.jpg";
 import Car from "../public/wlc-01.jpg";
 
@@ -56,7 +57,7 @@ export default function Home() {
         description: `Whitaker Landscape Constructions understands that calling a tradesperson is often the last thing you want to do. That's why we make it so you don't have to. Contact us via email, facebook messenger, Instagram DMs or text. We write back quickly.
         <br />
         We are also more than happy to do things the old fashioned way and talk on the phone should you so wish.`,
-        image: Map
+        image: Quotes
       },
       {
         heading: 'Travel is not an issue',
