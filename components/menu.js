@@ -15,11 +15,7 @@ export default function Menu() {
   return (
     <nav className={styles.navigation}>
       <div className={styles.logo}>
-        <Link href={process.env.homePage}>
-          <a>
-            <Image src={Logo} alt="Logo" width={152} height={156} />
-          </a>
-        </Link>
+        <Image src={Logo} alt="Logo" width={152} height={156} />
       </div>
 
       <div className={styles.mobile}>

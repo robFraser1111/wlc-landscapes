@@ -1,0 +1,14 @@
+.footer {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--green);
+  padding: 30px;
+}
+
+.footerSocial a {
+  margin: 10px;
+}
+
+.footerContact > * {
+  display: inline-block;
+}
