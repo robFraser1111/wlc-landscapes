@@ -77,7 +77,7 @@ export default function Home() {
         <meta name="description" content="Melbourne Landscaping" />
       </Head>
 
-      <Header bg={ Hero } title={"Landscapers servicing the Eastern and Bayside suburbs of Melbourne"} ctaText={"Get your free quote"} ctaLink={"#contact"}/>
+      <Header bg={ Hero } title={"Landscapers servicing the Eastern and Bayside suburbs of Melbourne"} ctaText={"Get your free quote"} ctaLink={"mailto:wlclandscapes@gmail.com"}/>
 
       <main>
 
@@ -104,9 +104,9 @@ export default function Home() {
 
         <Testimonials />
 
-        <h2 id={"contact"} className={"sub-heading"}>Request a free quote</h2>
+        {/* <h2 id={"contact"} className={"sub-heading"}>Request a free quote</h2>
 
-        <ContactForm />
+        <ContactForm /> */}
 
       </main>
 

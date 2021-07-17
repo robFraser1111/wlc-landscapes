@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "../styles/Testimonials.module.css";
 
 export default function Testimonials() {
+
   // Array of Testimonial objects
   const testimonials = [
     {
@@ -24,7 +25,9 @@ export default function Testimonials() {
   // REACT State Hook used to dynamically update the Testimonial that's displayed
   let [currentTestimonial, setTestimonial] = useState(testimonials[0]);
 
-  // Function that gets called on load then loops through Testimonials Array and updates State
+
+  useEffect(() => {
+    // Function that gets called on load then loops through Testimonials Array and updates State
   function Carousel(items) {
     let counter = 0;
     const length = items.length;
@@ -49,11 +52,10 @@ export default function Testimonials() {
       console.log("Counter " + counter);
     }, 8200);
   }
-
-  useEffect(() => {
     Carousel(testimonials);
   }, []); // <-- empty dependency array so function only runs once on load
 
+  
   return (
     <section id="classes" className={styles.testimonials}>
       <blockquote>

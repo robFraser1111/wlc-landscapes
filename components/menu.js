@@ -15,7 +15,9 @@ export default function Menu() {
   return (
     <nav className={styles.navigation}>
       <div className={styles.logo}>
-        <Image src={Logo} alt="Logo" width={152} height={156} />
+        <a href={"/"}>
+          <Image src={Logo} alt="Logo" width={152} height={156} />
+        </a>
       </div>
 
       <div className={styles.mobile}>
@@ -30,30 +32,30 @@ export default function Menu() {
 
       <ul className={mobileMenu ? styles.show : styles.hide}>
         <li className={styles.navItem}>
-          <a className={styles.underline} href={process.env.homePage + "#services"} onClick={() => toggleMobileMenu(false)}>
+          <a className={styles.underline} href={"/" + "#services"} onClick={() => toggleMobileMenu(false)}>
             Services
           </a>
         </li>
         <li className={styles.navItem}>
-          <a className={styles.underline} href={process.env.homePage + "#why"} onClick={() => toggleMobileMenu(false)}>
+          <a className={styles.underline} href={"/" + "#why"} onClick={() => toggleMobileMenu(false)}>
             Why us?
           </a>
         </li>
         <li className={styles.navItem}>
-          <a className={styles.underline} href={process.env.homePage + "#recent"} onClick={() => toggleMobileMenu(false)}>
+          <a className={styles.underline} href={"/" + "#recent"} onClick={() => toggleMobileMenu(false)}>
             Recent work
           </a>
         </li>
         <li className={styles.navItem}>
-          <a className={styles.underline} href={process.env.homePage + "#about"} onClick={() => toggleMobileMenu(false)}>
+          <a className={styles.underline} href={"/" + "#about"} onClick={() => toggleMobileMenu(false)}>
             About
           </a>
         </li>
-        <li className={styles.navItem}>
+        {/* <li className={styles.navItem}>
           <a className={styles.underline} href="#contact" onClick={() => toggleMobileMenu(false)}>
             Contact
           </a>
-        </li>
+        </li> */}
         <li className={`${styles.email} ${styles.navItem}`}>
           <a className={styles.hover} href="mailto:wlclandscapes@gmail.com">
             <Image src={Email} alt="Email" width={30} height={30} />

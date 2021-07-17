@@ -1,5 +1,6 @@
 .gallery {
   max-width: 1600px;
+  padding: 0 30px;
 }
 
 .thumbnails {
@@ -18,8 +19,4 @@
 .main {
   width: 100%;
   height: auto;
-}
-
-.main img {
-  width: inherit;
 }

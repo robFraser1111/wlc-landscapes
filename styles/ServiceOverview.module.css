@@ -6,10 +6,6 @@
   padding: 30px;
 }
 
-.overivew {
-  max-width: 800px;
-}
-
-.includes {
-  max-width: 400px;
+.service .includes {
+  padding-top: 30px;
 }
