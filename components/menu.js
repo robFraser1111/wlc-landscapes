@@ -16,7 +16,7 @@ export default function Menu() {
     <nav className={styles.navigation}>
       <div className={styles.logo}>
         <a href={"/"}>
-          <Image src={Logo} alt="Logo" width={152} height={156} />
+          <Image src={Logo} alt="Logo" width={152} height={156} priority={true} />
         </a>
       </div>
 
@@ -58,12 +58,12 @@ export default function Menu() {
         </li> */}
         <li className={`${styles.email} ${styles.navItem}`}>
           <a className={styles.hover} href="mailto:wlclandscapes@gmail.com">
-            <Image src={Email} alt="Email" width={30} height={30} />
+            <Image src={Email} alt="Email" width={30} height={30} priority={true} />
           </a>
         </li>
         <li className={`${styles.phone} ${styles.navItem}`}>
           <a className={styles.hover} href="tel:0419502546">
-            <Image src={Phone} alt="Phone" width={30} height={30} />
+            <Image src={Phone} alt="Phone" width={30} height={30} priority={true} />
           </a>
         </li>
       </ul>
