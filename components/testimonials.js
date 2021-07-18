@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import styles from "../styles/Testimonials.module.css";
 
 export default function Testimonials() {
-
   // Array of Testimonial objects
   const testimonials = [
     {
@@ -25,37 +24,39 @@ export default function Testimonials() {
   // REACT State Hook used to dynamically update the Testimonial that's displayed
   let [currentTestimonial, setTestimonial] = useState(testimonials[0]);
 
-
   useEffect(() => {
     // Function that gets called on load then loops through Testimonials Array and updates State
-  function Carousel(items) {
-    let counter = 0;
-    const length = items.length;
-    let classes = document.getElementById("classes");
+    function Carousel(items) {
+      let counter = 0;
+      const length = items.length;
+      let classes = document.getElementById("classes");
 
-    setInterval(function () {
-      if (counter == length - 1) {
-        counter = 0;
-      } else {
-        counter++;
-      }
+      setInterval(function () {
+        if (counter == length - 1) {
+          counter = 0;
+        } else {
+          counter++;
+        }
 
-      console.log("Start Fade");
-      setTimeout(() => { classes.classList.add("fade"); }, 8000);
+        console.log("Start Fade");
+        setTimeout(() => {
+          classes.classList.add("fade");
+        }, 8000);
 
-      console.log("Change Testimonial");
-      setTestimonial(testimonials[counter]);
+        console.log("Change Testimonial");
+        setTestimonial(testimonials[counter]);
 
-      console.log("End Fade");
-      setTimeout(() => { classes.classList.remove("fade"); }, 200);
+        console.log("End Fade");
+        setTimeout(() => {
+          classes.classList.remove("fade");
+        }, 200);
 
-      console.log("Counter " + counter);
-    }, 8200);
-  }
+        console.log("Counter " + counter);
+      }, 8200);
+    }
     Carousel(testimonials);
   }, []); // <-- empty dependency array so function only runs once on load
 
-  
   return (
     <section id="classes" className={styles.testimonials}>
       <blockquote>
