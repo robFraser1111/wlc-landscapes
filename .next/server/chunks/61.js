@@ -55,7 +55,7 @@ const {
   loader: configLoader,
   path: configPath,
   domains: configDomains
-} = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default"} || _imageConfig.imageConfigDefault; // sort smallest to largest
+} = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/wlclandscapes/_next/image","loader":"default"} || _imageConfig.imageConfigDefault; // sort smallest to largest
 
 const allSizes = [...configDeviceSizes, ...configImageSizes];
 configDeviceSizes.sort((a, b) => a - b);
@@ -1394,7 +1394,7 @@ let detectDomainLocale;
 
 if (false) {}
 
-const basePath =  false || '';
+const basePath = "/wlclandscapes" || 0;
 
 function buildCancellationError() {
   return Object.assign(new Error('Route Cancelled'), {
