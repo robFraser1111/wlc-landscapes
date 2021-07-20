@@ -1,11 +1,4 @@
-import Image from 'next/image'
-
 import styles from "../styles/Icons.module.css";
-
-import Certificate from "../public/certificate-solid.svg";
-import Arrows from "../public/exchange-alt-solid.svg";
-import Hands from "../public/hands-helping-solid.svg";
-
 
 export default function WhyUs() {
     return (

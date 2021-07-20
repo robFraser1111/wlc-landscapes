@@ -23,7 +23,7 @@ styles
 # misc
 .DS_Store
 *.pem
-*eslintrc
+.eslintrc
 
 # debug
 npm-debug.log*
