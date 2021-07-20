@@ -9,15 +9,21 @@
 /coverage
 
 # next.js
+/.next/
 /out/
 
 # production
 /build
 *.zip
+pages
+public
+styles
+
 
 # misc
 .DS_Store
 *.pem
+*eslintrc
 
 # debug
 npm-debug.log*
@@ -29,6 +35,8 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+*-lock.json
+*.lock
 
 # vercel
 .vercel
