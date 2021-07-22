@@ -9,7 +9,7 @@ import Testimonials from "../components/testimonials";
 import ContactForm from "../components/contact-form";
 import Footer from "../components/footer";
 
-import Hero from "../public/hero-01.jpg";
+import Hero from "../public/hero-02.jpg";
 import ServiceDecking from "../public/service-decking-01.jpg";
 import ServicePaving from "../public/service-paving-01.jpg";
 import ServiceFencing from "../public/service-pool-fencing-01.jpg";
@@ -135,10 +135,4 @@ export default function Home() {
       <Footer />
     </div>
   );
-}
-
-export async function getStaticProps(context) {
-  return {
-    props: {},
-  }
 }
