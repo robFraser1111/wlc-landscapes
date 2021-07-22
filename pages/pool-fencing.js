@@ -1,24 +1,28 @@
 import Head from "next/head";
 
 import Header from "../components/header";
-import Hero from "../public/hero-01.jpg";
+import Hero from "../public/hero-02.jpg";
 import ServiceOverview from "../components/service-overview";
 import Gallery from "../components/gallery";
 import ContactForm from "../components/contact-form";
 import Footer from "../components/footer";
 
-import ServiceDecking from "../public/service-decking-01.jpg";
-import ServiceLandscaping from "../public/service-landscaping-01.jpg";
-import ServicePaving from "../public/service-paving-01.jpg";
-import ServicePoolFencing from "../public/service-pool-fencing-01.jpg";
+import ServicePoolFencing1 from "../public/service-pool-fencing-01.jpg";
+import ServicePoolFencing2 from "../public/service-pool-fencing-02.jpg";
+import ServicePoolFencing3 from "../public/service-pool-fencing-03.jpg";
+import ServicePoolFencing4 from "../public/service-pool-fencing-04.jpg";
+import ServicePoolFencing5 from "../public/service-pool-fencing-05.jpg";
+import ServicePoolFencing6 from "../public/service-pool-fencing-06.jpg";
 
 export default function PoolFencing() {
 
     const images = [
-        ServiceDecking, 
-        ServiceLandscaping, 
-        ServicePaving, 
-        ServicePoolFencing
+        ServicePoolFencing1, 
+        ServicePoolFencing2, 
+        ServicePoolFencing3, 
+        ServicePoolFencing4, 
+        ServicePoolFencing5, 
+        ServicePoolFencing6, 
     ];
     
 
