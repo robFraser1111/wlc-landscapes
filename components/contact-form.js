@@ -1,37 +1,100 @@
+import React, { useState } from "react";
+
 import styles from "../styles/ContactForm.module.css";
 
 export default function ContactForm() {
+    const [status, setStatus] = useState({
+        submitted: false,
+        submitting: false,
+        info: { error: false, msg: null }
+      })
+    
+      const [inputs, setInputs] = useState({
+        email: '',
+        message: ''
+      })
+    
+      const handleResponse = (status, msg) => {
+        if (status === 200) {
+          setStatus({
+            submitted: true,
+            submitting: false,
+            info: { error: false, msg: msg }
+          })
+          setInputs({
+            email: '',
+            message: ''
+          })
+        } else {
+          setStatus({
+            info: { error: true, msg: msg }
+          })
+        }
+      }
+    
+      const handleOnChange = e => {
+        e.persist()
+        setInputs(prev => ({
+          ...prev,
+          [e.target.id]: e.target.value
+        }))
+        setStatus({
+          submitted: false,
+          submitting: false,
+          info: { error: false, msg: null }
+        })
+      }
+    
+      const handleOnSubmit = async e => {
+        e.preventDefault()
+        setStatus(prevStatus => ({ ...prevStatus, submitting: true }))
+        const res = await fetch('/api/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(inputs)
+        })
+        const text = await res.text()
+        handleResponse(res.status, text)
+      }
+
     return (
 
         <section className={ styles.section }>
 
-            <form className={ styles.form }>
+        <form onSubmit={handleOnSubmit}>
+            <label htmlFor="email">Email</label>
+            <input
+            id="email"
+            type="email"
+            onChange={handleOnChange}
+            required
+            value={inputs.email}
+            />
+            <label htmlFor="message">Message</label>
+            <textarea
+            id="message"
+            onChange={handleOnChange}
+            required
+            value={inputs.message}
+            />
+            <button type="submit" disabled={status.submitting}>
+            {!status.submitting
+                ? !status.submitted
+                ? 'Submit'
+                : 'Submitted'
+                : 'Submitting...'}
+            </button>
+        </form>
 
-                <input type="text" id="name" name="name" placeholder="Name" required />
-                <input type="text" id="suburb" name="suburb" placeholder="Suburb" required />
-                <input type="email" id="email" name="email" placeholder="Email" required />
-                <input type="text" id="phone" name="phone" placeholder="Phone" />
+        {status.info.error && (
+            <div className="error">Error: {status.info.msg}</div>
+        )}
+        {!status.info.error && status.info.msg && (
+            <div className="success">{status.info.msg}</div>
+        )}
 
-                <select id="contact" name="contact" required>
-                    <option value="">Preferred contact method</option>
-                    <option value="email">Email</option>
-                    <option value="phone">Phone</option>
-                </select>
-
-                <select id="urgency" name="urgency" required>
-                    <option value="">Urgency</option>
-                    <option value="asap">As soon as possible</option>
-                    <option value="next-month">Next month</option>
-                    <option value="not-urgent">Not urgent</option>
-                </select>
-
-                <textarea name="message" rows="10" cols="30" placeholder="Type of work required" required >
-
-                </textarea>
-
-                <button type="button">Submit</button> 
-
-            </form>
         </section>
 
     )
