@@ -84,7 +84,7 @@ export default function Home() {
           "Landscapers servicing the Eastern and Bayside suburbs of Melbourne"
         }
         ctaText={"Get your free quote"}
-        ctaLink={"mailto:wlclandscapes@gmail.com"}
+        ctaLink={"#contact"}
       />
 
       <main>

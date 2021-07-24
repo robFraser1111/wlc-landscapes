@@ -53,9 +53,9 @@ export default function Paving() {
 
                 <Gallery images={images}/>
 
-                {/* <h2 id={"contact"} className={"sub-heading"}>Request a free quote</h2>
+                <h2 id={"contact"} className={"sub-heading"}>Request a free quote</h2>
 
-                <ContactForm /> */}
+                <ContactForm />
 
             </main>
             
