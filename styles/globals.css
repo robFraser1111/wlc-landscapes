@@ -11,6 +11,13 @@ body {
   font-family: Segoe UI, Roboto, sans-serif;
 }
 
+textarea {
+  font-family: Segoe UI, Roboto, sans-serif;
+}
+input[type=text] {
+  font-family: Segoe UI, Roboto, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
