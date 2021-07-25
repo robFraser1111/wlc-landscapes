@@ -126,7 +126,10 @@ export default function Home() {
           Recent work
         </h2>
 
-        <FacebookFeed />
+        {/* Work around so component renders only on the client side */}
+        <div uppressHydrationWarning={true}>
+          {process.browser && <FacebookFeed />}
+        </div>
 
         <h2 id={"about"} className={"sub-heading"}>
           About us
