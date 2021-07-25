@@ -112,10 +112,17 @@ main {
 }
 
 
-
-
-
-
 .fade h5, .fade p  {
   opacity: 0!important;
+}
+
+
+.custom404, .custom500 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 3rem;
 }
