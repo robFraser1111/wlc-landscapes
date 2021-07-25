@@ -78,7 +78,7 @@ section {
 }
 
 header {
-  background: green;
+  background: var(--green);
 }
 
 header section {

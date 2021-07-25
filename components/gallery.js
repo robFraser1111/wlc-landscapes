@@ -7,7 +7,7 @@ import styles from "../styles/Gallery.module.css";
 export default function Gallery(props) {
 
     // onClick method changes the main image to the thumbnail clicked
-    let [main, setImage] = useState(props.images[1]);
+    let [main, setImage] = useState(props.images[0]);
 
     return (
         <section className={styles.gallery}>
@@ -19,7 +19,7 @@ export default function Gallery(props) {
             <div className={styles.thumbnails}>
                 {props.images.map((image) => (
                     <div className={styles.thumbnail} key={props.images[image]} onClick={() => setImage(image)}>
-                        <Image src={image} alt={image.src}/>
+                        <Image className={(main === image)? styles.highlight : ""} src={image} alt={image.src}/>
                     </div>
                 ))}
             </div>
