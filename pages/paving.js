@@ -15,53 +15,59 @@ import ServicePaving5 from "../public/service-paving-05.jpg";
 import ServicePaving6 from "../public/service-paving-06.jpg";
 
 export default function Paving() {
+  const images = [
+    ServicePaving1,
+    ServicePaving2,
+    ServicePaving3,
+    ServicePaving4,
+    ServicePaving5,
+    ServicePaving6,
+  ];
 
-    const images = [
-        ServicePaving1, 
-        ServicePaving2, 
-        ServicePaving3, 
-        ServicePaving4, 
-        ServicePaving5, 
-        ServicePaving6, 
-    ];
-    
+  return (
+    <div className={"container"}>
+      <Head>
+        <title>WLC Landscapes Melbourne</title>
+        <meta
+          property="og:title"
+          content="WLC Landscapes Melbourne"
+          key="title"
+        />
+        <meta
+          name="description"
+          content="We cater for all of your paving and concreteing needs."
+        />
+        <meta
+          property="og:description"
+          content="We cater for all of your paving and concreteing needs."
+        />
+        <meta property="og:image" content={Hero.src} />
+      </Head>
 
-    return (
-        <div className={"container"}>
+      <Header bg={Hero} title={"Paving"} />
 
-            <Head>
-                <title>WLC Landscapes</title>
-                <meta name="description" content="Melbourne Paving" />
-            </Head>
+      <main>
+        <ServiceOverview
+          serviceOverview={`We offer the best service and the highest quality materials and workmanship to achieve the landscape you desire. \n Whether it be for poolside paving, entertainment areas, driveways, or gardens big or small. We can work wonders with any material, whether it's concrete, bluestone, granite, sandstone, slate, limestone or bricks we create versatile styles from contemporary, natural, or something completely unique to you!`}
+          serviceIncludes={[
+            "Pool areas",
+            "Patios",
+            "Driveways",
+            "Paths",
+            "Garden edges",
+          ]}
+        />
 
-            <Header bg={ Hero } title={"Paving"} />
+        <Gallery images={images} />
 
-            <main>
+        <h2 id={"contact"} className={"sub-heading"}>
+          Request a free quote
+        </h2>
 
-                <ServiceOverview 
-                    serviceOverview={`We offer the best service and the highest quality materials and workmanship to achieve the landscape you desire. \n Whether it be for poolside paving, entertainment areas, driveways, or gardens big or small. We can work wonders with any material, whether it's concrete, bluestone, granite, sandstone, slate, limestone or bricks we create versatile styles from contemporary, natural, or something completely unique to you!`} 
-                    serviceIncludes={
-                        [
-                            "Pool areas", 
-                            "Patios", 
-                            "Driveways", 
-                            "Paths", 
-                            "Garden edges"
-                        ]
-                    }
-                />
+        <ContactForm />
+      </main>
 
-                <Gallery images={images}/>
-
-                <h2 id={"contact"} className={"sub-heading"}>Request a free quote</h2>
-
-                <ContactForm />
-
-            </main>
-            
-            <Footer />
-
-        </div>
-    );
-
+      <Footer />
+    </div>
+  );
 }

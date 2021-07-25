@@ -15,51 +15,58 @@ import ServiceLandscaping5 from "../public/service-landscaping-05.jpg";
 import ServiceLandscaping6 from "../public/service-landscaping-06.jpg";
 
 export default function Landscaping() {
+  const images = [
+    ServiceLandscaping1,
+    ServiceLandscaping2,
+    ServiceLandscaping3,
+    ServiceLandscaping4,
+    ServiceLandscaping5,
+    ServiceLandscaping6,
+  ];
 
-    const images = [
-        ServiceLandscaping1, 
-        ServiceLandscaping2, 
-        ServiceLandscaping3, 
-        ServiceLandscaping4, 
-        ServiceLandscaping5, 
-        ServiceLandscaping6, 
-    ];
-    
+  return (
+    <div className={"container"}>
+      <Head>
+        <title>WLC Landscapes Melbourne</title>
+        <meta
+          property="og:title"
+          content="WLC Landscapes Melbourne"
+          key="title"
+        />
+        <meta
+          name="description"
+          content="Experienced landscapers with a proud history of delivering construction and design landscaping projects."
+        />
+        <meta
+          property="og:description"
+          content="Experienced landscapers with a proud history of delivering construction and design landscaping projects."
+        />
+        <meta property="og:image" content={Hero.src} />
+      </Head>
 
-    return (
-        <div className={"container"}>
+      <Header bg={Hero} title={"Landscaping"} />
 
-            <Head>
-                <title>WLC Landscapes</title>
-                <meta name="description" content="Melbourne Paving" />
-            </Head>
+      <main>
+        <ServiceOverview
+          serviceOverview={`Your garden should be a space that you will love spending time in. We want that to be true for you. WLC will make sure that your garden is functional and timeless. \n We pride ourselves on transforming previously medicore spaces into magnificent pieces of art that reveal the beautiful nature of the area. With a selection of services that include design, brick work, landscaping, patio installation, water features, pots, paving, mature tree relocation, retaining walls - if it's in your garden we can do it!`}
+          serviceIncludes={[
+            "Hard landscapes",
+            "Soft landscapes",
+            "Landscape construction",
+            "Landscape design",
+          ]}
+        />
 
-            <Header bg={ Hero } title={"Landscaping"} />
+        <Gallery images={images} />
 
-            <main>
+        <h2 id={"contact"} className={"sub-heading"}>
+          Request a free quote
+        </h2>
 
-                <ServiceOverview 
-                    serviceOverview={`Your garden should be a space that you will love spending time in. We want that to be true for you. WLC will make sure that your garden is functional and timeless. \n We pride ourselves on transforming previously medicore spaces into magnificent pieces of art that reveal the beautiful nature of the area. With a selection of services that include design, brick work, landscaping, patio installation, water features, pots, paving, mature tree relocation, retaining walls - if it's in your garden we can do it!`} 
-                    serviceIncludes={
-                        [
-                            "Hard landscapes",
-                            "Soft landscapes",
-                            "Landscape construction",
-                            "Landscape design"
-                        ]
-                    }
-                />
+        <ContactForm />
+      </main>
 
-                <Gallery images={images}/>
-
-                <h2 id={"contact"} className={"sub-heading"}>Request a free quote</h2>
-
-                <ContactForm />
-            </main>
-            
-            <Footer />
-
-        </div>
-    );
-
+      <Footer />
+    </div>
+  );
 }

@@ -15,45 +15,59 @@ import ServiceDecking5 from "../public/service-decking-05.jpg";
 import ServiceDecking6 from "../public/service-decking-06.jpg";
 
 export default function Decking() {
+  const images = [
+    ServiceDecking1,
+    ServiceDecking2,
+    ServiceDecking3,
+    ServiceDecking4,
+    ServiceDecking5,
+    ServiceDecking6,
+  ];
 
-    const images = [
-        ServiceDecking1, 
-        ServiceDecking2, 
-        ServiceDecking3, 
-        ServiceDecking4, 
-        ServiceDecking5, 
-        ServiceDecking6
-    ];
-    
+  return (
+    <div className={"container"}>
+      <Head>
+        <title>WLC Landscapes Melbourne</title>
+        <meta
+          property="og:title"
+          content="WLC Landscapes Melbourne"
+          key="title"
+        />
+        <meta
+          name="description"
+          content="A wide range of timber and composite decking services available."
+        />
+        <meta
+          property="og:description"
+          content="A wide range of timber and composite decking services available."
+        />
+        <meta property="og:image" content={Hero.src} />
+      </Head>
 
-    return (
-        <div className={"container"}>
+      <Header bg={Hero} title={"Decking"} />
 
-            <Head>
-                <title>WLC Landscapes</title>
-                <meta name="description" content="Melbourne Landscaping" />
-            </Head>
+      <main>
+        <ServiceOverview
+          serviceOverview={`We design and construct quality composite decking, timber decking and pergolas. We can help you decide on the best decking material and design for your space. \n We are experienced in building or installing a wide range of different types of decks that will perfectly fir your property and tastes. We will design your deck taking into consideration your land, budget and lifestyle requirements, and we dedicate ourselves to providing top quality craftmanship.`}
+          serviceIncludes={[
+            "Pool decking",
+            "Composite decking",
+            "Timber decking",
+            "Pergola building",
+            "Feature fencing and screening",
+          ]}
+        />
 
-            <Header bg={ Hero } title={"Decking"} />
+        <Gallery images={images} />
 
-            <main>
+        <h2 id={"contact"} className={"sub-heading"}>
+          Request a free quote
+        </h2>
 
-                <ServiceOverview 
-                    serviceOverview={`We design and construct quality composite decking, timber decking and pergolas. We can help you decide on the best decking material and design for your space. \n We are experienced in building or installing a wide range of different types of decks that will perfectly fir your property and tastes. We will design your deck taking into consideration your land, budget and lifestyle requirements, and we dedicate ourselves to providing top quality craftmanship.`} 
-                    serviceIncludes={["Pool decking", "Composite decking", "Timber decking", "Pergola building", "Feature fencing and screening"]}
-                />
+        <ContactForm />
+      </main>
 
-                <Gallery images={images}/>
-
-                <h2 id={"contact"} className={"sub-heading"}>Request a free quote</h2>
-
-                <ContactForm />
-
-            </main>
-            
-            <Footer />
-
-        </div>
-    );
-
+      <Footer />
+    </div>
+  );
 }

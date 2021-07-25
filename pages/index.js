@@ -74,8 +74,21 @@ export default function Home() {
   return (
     <div className={"container"}>
       <Head>
-        <title>WLC Landscapes</title>
-        <meta name="description" content="Melbourne Landscaping" />
+        <title>WLC Landscapes Melbourne</title>
+        <meta
+          property="og:title"
+          content="WLC Landscapes Melbourne"
+          key="title"
+        />
+        <meta
+          name="description"
+          content="Experienced landscapers with a proud history of delivering construction and design landscaping projects."
+        />
+        <meta
+          property="og:description"
+          content="Experienced landscapers with a proud history of delivering construction and design landscaping projects."
+        />
+        <meta property="og:image" content={Hero.src} />
       </Head>
 
       <Header
@@ -127,7 +140,9 @@ export default function Home() {
 
         <Testimonials />
 
-        <h2 id={"contact"} className={"sub-heading"}>Request a free quote</h2>
+        <h2 id={"contact"} className={"sub-heading"}>
+          Request a free quote
+        </h2>
 
         <ContactForm />
       </main>
