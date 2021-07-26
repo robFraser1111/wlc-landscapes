@@ -89,6 +89,8 @@ export default function Home() {
           content="Experienced landscapers with a proud history of delivering construction and design landscaping projects."
         />
         <meta property="og:image" content={Hero.src} />
+
+        <meta name="google-site-verification" content="1ebYp9xWsqaACORX7j8kQz1B5y1lnAbrQmDaXv7gPkQ" />
       </Head>
 
       <Header
