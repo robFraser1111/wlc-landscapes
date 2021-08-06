@@ -32,7 +32,6 @@ export default function Footer() {
                   
                     <p><a href="https://roo.digital" target="_blank" rel="noreferrer">  Powered by RooDigital</a></p>
                 
-
         </footer>
 
     )
