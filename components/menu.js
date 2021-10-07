@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "../public/wlc-logo-02.png";
+import Logo from "../public/wlc-logo-03.png";
 import Email from "../public/envelope-solid.svg";
 import Phone from "../public/phone-alt-solid.svg";
 import Bars from "../public/bars-solid.svg";
@@ -16,7 +16,7 @@ export default function Menu() {
     <nav className={styles.navigation}>
       <div className={styles.logo}>
         <a href={"/"}>
-          <Image src={Logo} alt="Logo" width={152} height={156} priority={true} />
+          <Image src={Logo} alt="Logo" width={152} height={144} priority={true} />
         </a>
       </div>
 
