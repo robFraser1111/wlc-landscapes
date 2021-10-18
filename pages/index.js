@@ -10,7 +10,7 @@ import ContactForm from "../components/contact-form";
 import Footer from "../components/footer";
 
 import Hero from "../public/hero-02.jpg";
-import ServiceDecking from "../public/service-decking-01.jpg";
+import ServiceDecking from "../public/service-decking-02.jpg";
 import ServicePaving from "../public/service-paving-01.jpg";
 import ServiceFencing from "../public/service-pool-fencing-01.jpg";
 import ServiceLandscaping from "../public/service-landscaping-01.jpg";
@@ -55,20 +55,24 @@ export default function Home() {
 
   const aboutUs = [
     {
-      heading: "Get quotes your way",
-      description: `Whitaker Landscape Constructions understands that calling a tradesperson is often the last thing you want to do. That's why we make it so you don't have to. Contact us via email, facebook messenger, Instagram DMs or text. We write back quickly.\n\nWe are also more than happy to do things the old fashioned way and talk on the phone should you so wish.`,
+      heading: "Melbourne based",
+      description: `Whitaker Landscape Constructions is a Melbourne based family business dedicated to creating beautiful gardens and outdoor living spaces.\n\nWith over 18 years' experience, we work closely with our clients to turn your ideas, dreams and inspirations into stunning outdoor living areas.\n\nWe listen to your ideas and consider factors such as lifestyle, space and budget during our consultation and quoting process. We pride ourselves on the relationship we build with our clients.`,
       image: Quotes,
+      link: `tel:0419502546`,
+      target: ``
     },
     {
-      heading: "Travel is not an issue",
-      description: `Based in Noble Park, the heart of Melbourne South Eastern suburbs, we undertake most of our projects in this part of the world. However, we have also undertaken a significant amount of projects in Bayside and Mornington Peninsula and are willing to travel, so if you are within Greater Melbourne, chances are we have been there and are willing to go there again.`,
+      heading: "Areas we service",
+      description: `Based in Melbourne’s south eastern suburbs, we service all parts of greater Melbourne. We understand that sometimes it is difficult for our clients to be available during the day.\n\nWe provide onsite quote visits after hours and on the weekend Contact us for a free quote`,
       image: Map,
+      link: `https://www.google.com/maps/place/South+Eastern+Suburbs,+VIC/@-38.0238179,145.0373068,10z/data=!3m1!4b1!4m5!3m4!1s0x6ad61a0905dd4991:0xdf0deff7beae814!8m2!3d-38.0471084!4d145.2701235`,
+      target: `_blank`
     },
-    {
-      heading: "After hours and weekend work",
-      description: `We get that you need to work (we do too), and as most of us work 9-5. If we needed to access a tradesperson we would require they can come by after hours, so why should you be any different? Therefore we can work with you by providing free quotes and project work, out of hours and over the weekend where required.`,
-      image: Car,
-    },
+    // {
+    //   heading: "After hours and weekend work",
+    //   description: `We get that you need to work (we do too), and as most of us work 9-5. If we needed to access a tradesperson we would require they can come by after hours, so why should you be any different? Therefore we can work with you by providing free quotes and project work, out of hours and over the weekend where required.`,
+    //   image: Car,
+    // },
   ];
 
   return (

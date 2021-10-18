@@ -10,10 +10,10 @@ export default function ImageText(props) {
              
                 <div className={styles.items} key={ row.heading }>
                     <div>
-                        <Image src={ row.image } alt={ row.heading }/>
+                        <a href={ row.link } target={ row.target }><Image src={ row.image } alt={ row.heading }/></a>
                     </div>
                     <div className={styles.text}>
-                        <h4>{ row.heading }</h4>
+                        <h3>{ row.heading }</h3>
                         <p>{ row.description }</p>
                     </div>
                 </div>

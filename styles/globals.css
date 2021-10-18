@@ -2,10 +2,12 @@
   --green: #176f13;
   --black: #080808;
   --white: #f8f8f8;
+  --background: #f2f2f2;
 }
 
 html,
 body {
+  background: var(--background);
   padding: 0;
   margin: 0;
   font-family: Segoe UI, Roboto, sans-serif;
@@ -98,8 +100,6 @@ header section button {
 button {
   cursor: pointer;
 }
-
-
 
 main {
   max-width: 2560px;

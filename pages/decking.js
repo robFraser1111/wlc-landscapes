@@ -7,7 +7,7 @@ import Gallery from "../components/gallery";
 import ContactForm from "../components/contact-form";
 import Footer from "../components/footer";
 
-import ServiceDecking1 from "../public/service-decking-01.jpg";
+// import ServiceDecking1 from "../public/service-decking-01.jpg";
 import ServiceDecking2 from "../public/service-decking-02.jpg";
 import ServiceDecking3 from "../public/service-decking-03.jpg";
 import ServiceDecking4 from "../public/service-decking-04.jpg";
@@ -16,7 +16,7 @@ import ServiceDecking6 from "../public/service-decking-06.jpg";
 
 export default function Decking() {
   const images = [
-    ServiceDecking1,
+    // ServiceDecking1,
     ServiceDecking2,
     ServiceDecking3,
     ServiceDecking4,
@@ -48,7 +48,17 @@ export default function Decking() {
 
       <main>
         <ServiceOverview
-          serviceOverview={`We design and construct quality composite decking, timber decking and pergolas. We can help you decide on the best decking material and design for your space. \n We are experienced in building or installing a wide range of different types of decks that will perfectly fir your property and tastes. We will design your deck taking into consideration your land, budget and lifestyle requirements, and we dedicate ourselves to providing top quality craftmanship.`}
+          serviceOverview={[
+            `We can design and build the perfect deck for your home. We will work   with you through this process, considering the functional needs, your style, the most
+            appropriate material, existing property surroundings and your budget.`,
+            
+            `Using high quality modern decking materials, we can construct an outdoor
+            entertaining space that becomes an extension of your indoor living.
+            We can also build decking areas around your pool, transforming your pool area
+            into an oasis to enjoy during our balmy Australian summers.`,
+
+            `We also build decks and outdoor spaces designed by you or your architect.`
+          ]}
           serviceIncludes={[
             "Pool decking",
             "Composite decking",

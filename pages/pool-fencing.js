@@ -48,7 +48,10 @@ export default function PoolFencing() {
 
       <main>
         <ServiceOverview
-          serviceOverview={`We help by transforming your pool areas into safe, stylish, architectually designed outdoor living spacves. \n Pool fencing is absolutely essential for any swimming pool installation. Pool fencing in Australia is statutory and a legal requirement. Every Aussie pool must now be properly protected. \n We specialise in frameless, semi-frameless, and framed designs. What makes glass fencing so unique is not just its minimal design, but it's ability to secure the prmise without impacting the view.`}
+          serviceOverview={
+            [`We create stylish, functional and safe poolside living spaces, creating a pool area for you to enjoy for years to come. We specialise in frameless and semi-frameless designed pool fences.`,
+            `Our pool fences are sleek, modern and ensure pool views are not obstructed. The materials and finishes can be tailored to suit your landscape surrounds. All swimming pools in Australia are required by law to be safely fenced and comply with current Victorian regulations and Australian standards. We can ensure your pool fence is compliant.`]
+          }
           serviceIncludes={[
             "Frameless glass pool fencing",
             "Semi-frameless glass pool fencing",
