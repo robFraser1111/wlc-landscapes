@@ -48,7 +48,13 @@ export default function Landscaping() {
 
       <main>
         <ServiceOverview
-          serviceOverview={`Your garden should be a space that you will love spending time in. We want that to be true for you. WLC will make sure that your garden is functional and timeless. \n We pride ourselves on transforming previously medicore spaces into magnificent pieces of art that reveal the beautiful nature of the area. With a selection of services that include design, brick work, landscaping, patio installation, water features, pots, paving, mature tree relocation, retaining walls - if it's in your garden we can do it!`}
+          serviceOverview={[
+            `Your garden is an extension of your home. It is a space to enjoy entertaining or simply relaxing.`,
+
+            `Whitaker Landscape Constructions can work with you to create a garden that is functional, beautiful and suits your needs.`,
+
+            `We pride ourselves on transforming tired gardens into wonderful spaces that complement the natural surroundings of your property.`
+          ]}
           serviceIncludes={[
             "Hard landscapes",
             "Soft landscapes",

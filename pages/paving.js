@@ -48,7 +48,11 @@ export default function Paving() {
 
       <main>
         <ServiceOverview
-          serviceOverview={`We offer the best service and the highest quality materials and workmanship to achieve the landscape you desire. \n Whether it be for poolside paving, entertainment areas, driveways, or gardens big or small. We can work wonders with any material, whether it's concrete, bluestone, granite, sandstone, slate, limestone or bricks we create versatile styles from contemporary, natural, or something completely unique to you!`}
+          serviceOverview={[
+            `We can install all types of paving around your garden and outdoor living areas, including poolside paving, patios, entertainment areas, driveways, paths, and garden areas, to name a few.`,
+          
+            `We pride ourselves on providing the best advice on paving selection and professional installation. With high quality materials and excellent workmanship we will create the outdoor space you desire.`
+          ]}
           serviceIncludes={[
             "Pool areas",
             "Patios",
