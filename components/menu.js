@@ -58,7 +58,7 @@ export default function Menu() {
           </a>
         </li> */}
         <li className={`${styles.messenger} ${styles.navItem}`}>
-          <a className={styles.hover} href="https://m.me/wlclandscapes/" target="_blank">
+          <a className={styles.hover} href="https://m.me/wlclandscapes/" target="_blank" rel="noreferrer">
             <Image src={Messenger} alt="Messenger" width={30} height={30} priority={true} />
           </a>
         </li>
