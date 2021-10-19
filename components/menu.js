@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "../public/wlc-logo-03.png";
-import Email from "../public/envelope-solid.svg";
-import Phone from "../public/phone-alt-solid.svg";
 import Messenger from "../public/facebook-messenger-brands.svg";
+import Email from "../public/envelope-solid.svg";
+import Sms from "../public/sms-solid.svg";
+import Phone from "../public/phone-alt-solid.svg";
 import Bars from "../public/bars-solid.svg";
 
 import styles from "../styles/Menu.module.css";
@@ -65,6 +66,11 @@ export default function Menu() {
         <li className={`${styles.email} ${styles.navItem}`}>
           <a className={styles.hover} href="mailto:wlclandscapes@gmail.com">
             <Image src={Email} alt="Email" width={30} height={30} priority={true} />
+          </a>
+        </li>
+        <li className={`${styles.Sms} ${styles.navItem}`}>
+          <a className={styles.hover} href="sms:0419502546">
+            <Image src={Sms} alt="SMS" width={30} height={30} priority={true} />
           </a>
         </li>
         <li className={`${styles.phone} ${styles.navItem}`}>
