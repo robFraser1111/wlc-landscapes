@@ -4,6 +4,7 @@ import { useState } from "react";
 import Logo from "../public/wlc-logo-03.png";
 import Email from "../public/envelope-solid.svg";
 import Phone from "../public/phone-alt-solid.svg";
+import Messenger from "../public/facebook-messenger-brands.svg";
 import Bars from "../public/bars-solid.svg";
 
 import styles from "../styles/Menu.module.css";
@@ -56,6 +57,11 @@ export default function Menu() {
             Contact
           </a>
         </li> */}
+        <li className={`${styles.messenger} ${styles.navItem}`}>
+          <a className={styles.hover} href="https://m.me/wlclandscapes/" target="_blank">
+            <Image src={Messenger} alt="Messenger" width={30} height={30} priority={true} />
+          </a>
+        </li>
         <li className={`${styles.email} ${styles.navItem}`}>
           <a className={styles.hover} href="mailto:wlclandscapes@gmail.com">
             <Image src={Email} alt="Email" width={30} height={30} priority={true} />
