@@ -117,8 +117,8 @@
     transition: 0.2s;
   }
 
-  .email, .phone {
-    display: none!important;
+  .email, .phone, .messenger {
+    /* display: none!important; */
   }
 
   .navigation ul .navItem {

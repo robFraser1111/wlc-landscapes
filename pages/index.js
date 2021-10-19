@@ -57,9 +57,9 @@ export default function Home() {
     {
       heading: "Melbourne based",
       description: `Whitaker Landscape Constructions is a Melbourne based family business dedicated to creating beautiful gardens and outdoor living spaces.\n\nWith over 18 years' experience, we work closely with our clients to turn your ideas, dreams and inspirations into stunning outdoor living areas.\n\nWe listen to your ideas and consider factors such as lifestyle, space and budget during our consultation and quoting process. We pride ourselves on the relationship we build with our clients.`,
-      image: Quotes,
-      link: `tel:0419502546`,
-      target: ``
+      image: Car,
+      link: `https://www.google.com/maps/place/South+Eastern+Suburbs,+VIC/@-38.0238179,145.0373068,10z/data=!3m1!4b1!4m5!3m4!1s0x6ad61a0905dd4991:0xdf0deff7beae814!8m2!3d-38.0471084!4d145.2701235`,
+      target: `_blank`
     },
     {
       heading: "Areas we service",
