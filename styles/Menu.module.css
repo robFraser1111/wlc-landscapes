@@ -13,8 +13,8 @@
 
 .navigation ul .navItem {
   display: inline-block;
-  padding: 30px;
-  font-size: 24px;
+  padding: 25px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -115,10 +115,6 @@
     top: 120px;
     right: 0;
     transition: 0.2s;
-  }
-
-  .email, .phone, .messenger {
-    /* display: none!important; */
   }
 
   .navigation ul .navItem {
