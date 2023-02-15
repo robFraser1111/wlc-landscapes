@@ -27,7 +27,7 @@ export default function PoolFencing() {
   return (
     <div className={"container"}>
       <Head>
-        <title>WLC Landscapes Melbourne</title>
+        <title>WLC Landscapes Melbourne - Pool fencing</title>
         <meta
           property="og:title"
           content="WLC Landscapes Melbourne"
